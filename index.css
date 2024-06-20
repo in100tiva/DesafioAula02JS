@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #1c1c1c;
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --container-bg: #1e1e1e;
+    --border-radius: 0.5rem;
+    --padding: 1rem;
+    --transition-duration: 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    background: var(--container-bg);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: var(--padding);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding);
+}
+
+button {
+    padding: var(--padding);
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color var(--transition-duration);
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+#form-container {
+    margin-top: var(--padding);
+}
+
+label, input {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #333;
+    background-color: #2b2b2b;
+    color: var(--text-color);
+}
+
+input::placeholder {
+    color: #888;
+}
+
+#resultado {
+    margin-top: var(--padding);
+    font-weight: bold;
+}

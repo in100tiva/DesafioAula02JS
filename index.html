@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Geométrica</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Calculadora Geométrica</h1>
+      <div class="menu">
+        <button onclick="showForm('triangulo')">Calcular Área do Triângulo</button>
+        <button onclick="showForm('retangulo')">Calcular Área do Retângulo</button>
+        <button onclick="showForm('cubo')">Calcular Volume do Cubo</button>
+        <button onclick="showForm('circulo')">Calcular Área do Círculo</button>
+        <button onclick="sair()">Sair</button>
+      </div>
+      <div id="form-container"></div>
+    </div>
+    <script src="scripts.js"></script>
+
+
+  </body>
+
+</html>
